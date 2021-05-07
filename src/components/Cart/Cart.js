@@ -19,7 +19,7 @@ class Cart extends Component {
                                     <Title name="your" title="Cart"> </Title>
                                 <CartColumns></CartColumns>
                                 <CartList value = {value}> </CartList>
-                                <CartTotals value ={value}> </CartTotals>
+                                <CartTotals value = {value}> </CartTotals>
                                 </React.Fragment>
                             );
                         }
