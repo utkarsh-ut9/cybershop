@@ -33,7 +33,7 @@ class ProductProvider extends Component {
     };
 
     getItem = (id) => {
-        const product = this.state.products.find(item => item.id == id);
+        const product = this.state.products.find(item => item.id === id);
         return product;
     }
 
@@ -75,7 +75,7 @@ class ProductProvider extends Component {
 
     increment = (id) => {
         let tempCart = [...this.state.cart];
-        const selectedProduct = tempCart.find(item=>item.id == id)
+        const selectedProduct = tempCart.find(item=>item.id === id)
         const index = tempCart.indexOf(selectedProduct);
         const product = tempCart[index];
 
@@ -87,7 +87,7 @@ class ProductProvider extends Component {
 
     decrement = (id) => {
         let tempCart = [...this.state.cart];
-        const selectedProduct = tempCart.find(item=>item.id == id)
+        const selectedProduct = tempCart.find(item=>item.id === id)
         const index = tempCart.indexOf(selectedProduct);
         const product = tempCart[index];
 
